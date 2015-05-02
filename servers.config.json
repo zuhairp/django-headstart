@@ -1,0 +1,19 @@
+{
+    "config": {
+        "project_name": "myapp"
+    }, 
+    "vagrant": {
+        "aliases": [
+            "v"
+        ], 
+        "pretty_name": "a Vagrant box", 
+        "is_vagrant_vm": true, 
+        "vagrant_name": ""
+    }, 
+    "digital_ocean": {
+        "pretty_name": "a Digital Ocean droplet", 
+        "aliases": [
+            "do"
+        ]
+    }
+}
