@@ -26,7 +26,7 @@ Rember to always source the virtualenv anytime you start developing
 Clone the repo and cd into it, i.e.
 
 ```bash
-git clone CLONE_URL_HERE myapp
+git clone git@github.com:zuhairp/django-headstart.git myapp
 cd myapp
 ```
 
