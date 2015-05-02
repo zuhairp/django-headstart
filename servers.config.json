@@ -1,7 +1,4 @@
 {
-    "config": {
-        "project_name": "myapp"
-    }, 
     "vagrant": {
         "aliases": [
             "v"
