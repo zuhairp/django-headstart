@@ -112,9 +112,14 @@ If you want to create a fixture of the data on Vagrant's database
 Nginx will serve static files from the www directory of your project. Take that as you will
 
 #### Adding other machines
-You've finished your awesome app and now it's time to show it to the world! Luckily, you don't need to change your workflow too much. All you need to do is add another server to servers.config.json. Set the ```is_vagrant_vm property``` to ``` true ``` so that folder syncing is used instead of Git pulls. (Note that non-Vagrant VM code actually hasn't been written yet... I'll get to it eventually)
+You've finished your awesome app and now it's time to show it to the world! Luckily, you don't need to change your workflow too much. All you need to do is add another server to servers.config.json. Set the ```is_vagrant_vm property``` to ``` true ``` so that folder syncing is used instead of Git pulls. 
 
 The properties you set will set the env for Fabric. Properties in ```config``` will apply to all servers. 
+
+At the bare minimum, your ```config``` will need a ```git_repo``` which is a URL ending in .git, a ```git_branch``` which is the branch to checkout, and ```project_directory``` which specifies where to put everything.
+To be truly automatic, I suggest generating an SSH key on the server which you can add to BitBucket/GitHub/etc so you don't have to enter a password when doing a deploy
+
+For the server itself, it will need ```user```, ```password```, and ```host_string``` which is just user@ip_address
 
 ### File Structure
 This is an overview of each file that comes in the repo so you know why it is there.
