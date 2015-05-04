@@ -9,12 +9,14 @@ import fabtools
 
 import utils
 
+
 def migrate():
     """
     Run your migrations, equivalent to fab <target> manage.migrate
 
     """
     with cd(utils.get_project_dir()), fabtools.python.virtualenv(utils.get_venv_dir()):
+        fabtools.python.install_requirements('requirements/requirements-prod.txt')
         run('./manage.py migrate')
 
 def runserver():
