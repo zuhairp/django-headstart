@@ -6,6 +6,9 @@ Get a headstart on your Django project. With only a handful of commands, you'll 
 * Develop your app with either Django's built in development server or use Gunicorn as your application server
 * Control it all with [Fabric](http://www.fabfile.org/)
 
+#### Why not <insert super cool X here>?
+I'm sure <super cool X> is super cool, but I found this method was the right balance of simplicity and consistency for my workflow. If you're a fan of <super cool X>, then use <super cool X>.
+
 ### Getting Started
 
 #### Prereqs
