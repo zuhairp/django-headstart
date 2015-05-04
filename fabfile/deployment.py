@@ -61,6 +61,7 @@ def deploy(server_type="runserver"):
         require.git.working_copy(
             remote_url = env.git_repo,
             path = env.project_dir,
+            branch = env.git_branch,
         )
 
     migrate()
