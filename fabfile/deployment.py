@@ -57,5 +57,11 @@ def stop():
 
 
 def deploy(server_type="runserver"):
+    if not env.is_vagrant_vm:
+        require.git.working_copy(
+            remote_url = env.git_repo,
+            path = env.project_dir,
+        )
+
     migrate()
     gunicorn() if server_type=="gunicorn" else runserver()
