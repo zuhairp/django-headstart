@@ -60,7 +60,7 @@ def deploy(server_type="runserver"):
     if not env.is_vagrant_vm:
         require.git.working_copy(
             remote_url = env.git_repo,
-            path = env.project_dir,
+            path = env.project_directory,
             branch = env.git_branch,
         )
 
